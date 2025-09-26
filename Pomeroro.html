@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title> Pomeroro</title>
+    <link  rel="icon" href="poeroro.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2d3e72">
+</head>
+<body>
+<header> 
+  <div id="header-left">
+    <p id="title">My personal Pomodoro</p>
+    <div id="menu">
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li id="parameters">Parameters</li>
+      </ul>
+    </div>
+  </div>
+  <img src="poeroro.png" alt="Pomodoro Logo">
+</header>
+<main>
+
+    <div id="munitor">
+         <h1> Pomeroro</h1>
+    <ul id="choice">
+          <li id="pomodoro" class="active">Pomodoro</li>
+          <li id="break">Break</li>
+    </ul>
+    <!-- Timer -->
+    <div id="timer">25:00</div>
+    <audio id="pomodoroMusic" src="" preload="auto"></audio>
+    <button id="startButton">Start </button>
+    <button id="pauseButton">Pause</button>
+    <button id="RestartButton">Restart</button>
+   
+    
+    </div>
+    <!-- Here i'll put the parameter pop up -->
+     <div id="parametersModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Parameters</h2>
+    <label>Pomodoro duration (minutes):</label>
+    <input type="number" id="pomodoroInput" value="25" min="1">
+    <label>Break duration (minutes):</label>
+    <input type="number" id="breakInput" value="5" min="1">
+    <label>Pomodoro music URL:</label>
+    <input type="text" id="musicInput" placeholder="https://...">
+    <button id="saveParameters">Save</button>
+  </div>
+</div>
+    <section id="About">
+        <h2> About</h2>
+        <p> This tool is created as an exercice to use the js html and CSS knowledge into 
+            making a personnalized pomedoro which will integrate a playlist
+        </p>
+    </section>
+
+    <footer> Done by Rd.mera 2025</footer>
+</main>
+<script src="timer.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.error("Service Worker failed:", err));
+}
+</script>
+</body>
+
+</html> 

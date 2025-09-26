@@ -1,0 +1,20 @@
+{
+  "name": "My Personal Pomodoro",
+  "short_name": "Pomodoro",
+  "start_url": "./Pomeroro.html",
+  "display": "standalone",
+  "background_color": "#988885",
+  "theme_color": "#2d3e72",
+  "icons": [
+    {
+      "src": "poeroro.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "poeroro.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
