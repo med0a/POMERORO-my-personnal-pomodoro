@@ -30,6 +30,8 @@ It will not work directly from `file://`. You need to serve it over **http:// or
 
 ## Feedback : 
 Thanks for your feedback and suggestions!
+ ![Pomodoro App Screenshot](Pomeroro.png)
+
 
 **Author**: Rd.mera  
 *Personal Project*
