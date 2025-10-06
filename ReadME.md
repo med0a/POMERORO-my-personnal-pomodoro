@@ -32,6 +32,6 @@ It will not work directly from `file://`. You need to serve it over **http:// or
 Thanks for your feedback and suggestions!
  ![Pomodoro App Screenshot](Pomeroro.png)
 
-
+You can find a similar topic in roadmap for more help in creating your own pomodoro timer : https://roadmap.sh/projects/pomodoro-timer
 **Author**: Rd.mera  
 *Personal Project*
